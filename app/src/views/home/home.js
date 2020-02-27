@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.css';
 import logo from '../../logo.svg';
-import Todo from '../../components/todo/todo';
+import Todo from '../../components/Todo/Todo';
 
 export default class Home extends React.Component {
     /** 数据状态 */

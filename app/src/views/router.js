@@ -1,6 +1,6 @@
 import Main from './main/main';
 import Page404 from '../components/404';
-import NextPage from './next-page/nextpage';
+import NextPage from './next-page/next-page';
 import About from './about/about';
 import Home from './home/home';
 
