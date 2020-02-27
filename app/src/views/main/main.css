@@ -1,0 +1,21 @@
+.main{
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 10px;
+}
+.main .menu{
+    display: grid;
+    padding: 8px 0px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+}
+
+.main .menu-item .button {
+    color: #61dafb;
+    width: 100%;
+}
+
+.main .menu-active .button {
+    background-color: #61dafb; 
+    color: #fff;
+} 

@@ -1,0 +1,16 @@
+.menu{
+    display: grid;
+    padding: 8px 0px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+}
+
+.menu-item .button {
+    color: #61dafb;
+    width: 100%;
+}
+
+.menu-active .button {
+    background-color: #61dafb; 
+    color: #fff;
+} 
