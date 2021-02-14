@@ -24,7 +24,7 @@ const routeList = [
             }
         ]
     }, {
-        path: '/next:id',
+        path: '/next/:id',
         component: NextPage
     }
 ];

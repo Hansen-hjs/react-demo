@@ -38,14 +38,18 @@ export default function TheCard(props) {
         //     console.log('fetch', res);
         // })
     }
+    
+    // function PosterImage() {
+    //     const value = showDefaultPoster ? defaultData.poster : (props.poster || defaultData.poster);
+    //     return <img src={ value } alt="the-card-poster" />
+    // }
 
     return (
         <div className="card the-card">
             <h2 className="title">{ props.title || defaultData.title }</h2>
             <div className="poster">
-                {
-                    showDefaultPoster ? <img src={ defaultData.poster } alt="the-card-poster" /> : <img src={ props.poster || defaultData.poster } alt="the-card-poster" />
-                }
+                {/* <PosterImage /> */}
+                <img src={ showDefaultPoster ? defaultData.poster : (props.poster || defaultData.poster) } alt="the-card-poster" />
                 <div className="poster-dec flex fvertical">{ props.posterDec || defaultData.posterDec }</div>
             </div>
             <div className="info">{ props.content || defaultData.content }</div>

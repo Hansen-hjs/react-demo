@@ -7,7 +7,7 @@ export default function About(props) {
 
     // console.log('component-About', props);
     
-    const nextPagePath = `/next:${Math.floor(Math.random() * 10) + 1}`;
+    const nextPagePath = `/next/${Math.floor(Math.random() * 10) + 1}`;
 
     return (
         <div className="about">
