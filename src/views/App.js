@@ -1,6 +1,6 @@
-import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import routeList from './router';
+import React from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
+import routeList from "./router";
 
 export default function App(props) {
 

@@ -1,11 +1,11 @@
-import React from 'react';
-import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
-import './main.css';
-import routeList from '../router';
+import React from "react";
+import { Switch, Route, Redirect, NavLink } from "react-router-dom";
+import "./main.css";
+import routeList from "../router";
 
 export default  function Main(props) {
 
-    // console.log('Main', props);
+    // console.log("Main", props);
 
     /** 渲染路由索引 */
     const index = 0;

@@ -1,8 +1,8 @@
-import Main from './main/main';
-import Page404 from '../components/404';
-import NextPage from './next-page/next-page';
-import About from './about/about';
-import Home from './home/home';
+import Main from "./main/main";
+import Page404 from "../components/404";
+import NextPage from "./next-page/next-page";
+import About from "./about/about";
+import Home from "./home/home";
 
 /** 
  * 路由列表 
@@ -10,28 +10,28 @@ import Home from './home/home';
 */
 const routeList = [
     {
-        path: '/index',
+        path: "/index",
         component: Main,
         children: [
             {
-                name: 'home',
-                path: '/index/home',
+                name: "home",
+                path: "/index/home",
                 component: Home,
             }, {
-                name: 'about',
-                path: '/index/about',
+                name: "about",
+                path: "/index/about",
                 component: About,
             }
         ]
     }, {
-        path: '/next/:id',
+        path: "/next/:id",
         component: NextPage
     }
 ];
 
 // `404`一定要放在最后，当路由匹配不到的路径的时候就跳`404`的组件
 routeList.push({
-    path: '', 
+    path: "", 
     component: Page404
 });
 

@@ -1,14 +1,14 @@
-import React from 'react';
-import './404.css';
-import { NavLink } from 'react-router-dom';
-import image404 from '../../images/404.png';
-import imageCloud from '../../images/404-cloud.png';
+import React from "react";
+import "./404.css";
+import { NavLink } from "react-router-dom";
+import image404 from "../../images/404.png";
+import imageCloud from "../../images/404-cloud.png";
 
 export default function Page404() {
 
-    const message = '404 Page Not Found';
+    const message = "404 Page Not Found";
 
-    const info = 'Please check that the URL you entered is correct, or click the button below to return to the homepage.';
+    const info = "Please check that the URL you entered is correct, or click the button below to return to the homepage.";
 
     return (
         <div id="no-find">
@@ -23,7 +23,7 @@ export default function Page404() {
                     <div className="text-404__oops">OOPS!</div>
                     <div className="text-404__info">
                         All rights reserved
-                        <a style={{ color: '#20a0ff' }} href="https://wallstreetcn.com">wallstreetcn</a>
+                        <a style={{ color: "#20a0ff" }} href="https://wallstreetcn.com">wallstreetcn</a>
                     </div>
                     <div className="text-404__headline">{ message }</div>
                     <div className="text-404__info">{ info }</div>

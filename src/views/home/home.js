@@ -1,21 +1,22 @@
-import React from 'react';
-import './home.css';
-import logo from '../../logo.svg';
-import Todo from '../../components/Todo/Todo';
+import React from "react";
+import "./home.css";
+import logo from "../../logo.svg";
+import Todo from "../../components/Todo/Todo";
 
 export default class Home extends React.Component {
+
     /** 数据状态 */
     state = {
         /** 内容 */
-        text: '',
+        text: "",
         /** 子组件传过来的数据 */
-        homeData: '',
+        homeData: "",
         list: [
             {
-                name: '列表一',
+                name: "列表一",
                 id: 0
             }, {
-                name: '列表二',
+                name: "列表二",
                 id: 1
             }
         ]
@@ -24,8 +25,8 @@ export default class Home extends React.Component {
     /** 清空输入 */
     clearInput() {
         this.setState({
-            text: '',
-            homeData: ''
+            text: "",
+            homeData: ""
         });
     }
 
@@ -43,7 +44,7 @@ export default class Home extends React.Component {
     
     /** 获取子组件数据 */
     getData(...agrs) {
-        let value = [...agrs].toString().replace(',','');
+        let value = [...agrs].toString().replace(",","");
         this.setState({
             homeData: value
         });

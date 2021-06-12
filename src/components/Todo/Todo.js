@@ -1,11 +1,11 @@
-import React from 'react';
-import './Todo.css';
+import React from "react";
+import "./Todo.css";
 
 export default class Todo extends React.Component {
     /** 数据状态 */
     state = {
         /** 内容 */
-        info: '',
+        info: "",
     }
 
     /**
@@ -18,18 +18,18 @@ export default class Todo extends React.Component {
             info: value
         });
         if (value) {
-            this.props.getHomeData('子组件数据：', value);
+            this.props.getHomeData("子组件数据：", value);
         } else {
-            this.props.getHomeData('');
+            this.props.getHomeData("");
         }
     }
 
     sendData() {
         this.props.add(this.state.info);
         this.setState({
-            info: ''
+            info: ""
         });
-        this.props.getHomeData('');
+        this.props.getHomeData("");
     }
 
     render() {
